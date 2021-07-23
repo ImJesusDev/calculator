@@ -45,6 +45,10 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx'],
+    fallback: {
+      path: false,
+      fs: false,
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
